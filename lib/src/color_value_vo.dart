@@ -22,11 +22,16 @@ class ColorValueVo {
         : ((delta / (1.0 - (2.0 * lightness - 1.0).abs())).clamp(0.0, 1.0));
   }
 
-  num getDistance(ColorValueVo from){
-    final rgbDiff = math.pow(color.red-from.color.red, 2)+math.pow(color.green-from.color.green,2)+math.pow(color.blue-from.color.blue,2);
-    final hslDiff = math.pow(hue-from.hue,2)+math.pow(saturation-from.saturation,2)+math.pow(lightness-from.lightness,2);
-    return rgbDiff+hslDiff*2;
+  num getDistance(ColorValueVo from) {
+    final rgbDiff = math.pow(color.red - from.color.red, 2) +
+        math.pow(color.green - from.color.green, 2) +
+        math.pow(color.blue - from.color.blue, 2);
+    final hslDiff = math.pow(hue - from.hue, 2) +
+        math.pow(saturation - from.saturation, 2) +
+        math.pow(lightness - from.lightness, 2);
+    return rgbDiff + hslDiff * 2;
   }
+
   double _getHue(
       double red, double green, double blue, double max, double delta) {
     late double hue;

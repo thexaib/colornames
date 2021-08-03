@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:colornames/src/color_names_list.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:colornames/colornames.dart';
 
@@ -33,8 +34,12 @@ void main() {
     final colorB1 = Color(0xFF9E1B32);
     expect(colorB1.colorName, nameB);
   });
-  test('sorting',(){
-    final l= ColorNamesList.intMap.entries.toList();
-    print(l.length);
+  test('test extension on int value',(){
+    expect(0x0.colorName, "Black");
+    expect(0xFFFFFF.colorName, "White");
+    expect(0xFF0000.colorName, "Red");
+    expect(0x242A1D.colorName, "Log Cabin");
+    expect(128.colorName, "Navy Blue");
+    expect(0x007fff.colorName, "Azure");
   });
 }

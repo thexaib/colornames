@@ -1,6 +1,6 @@
 name: colornames
 description: Get a name for given Color. This package contains hardcoded names for 2231 color values. For an input color, it finds a name in the list which has the closest match.
-version: 0.0.1+1
+version: 0.0.1+2
 homepage: https://github.com/thexaib/colornames
 
 environment:

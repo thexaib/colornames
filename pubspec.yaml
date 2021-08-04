@@ -1,7 +1,7 @@
 name: colornames
-description: Get a name for given Color
-version: 0.0.1
-homepage: https://github.com/thexaib/colornames.git
+description: Get a name for given Color. This package contains hardcoded names for 2235 color values. For an input color, it finds a name in the list which has closest match.
+version: 0.0.1+1
+homepage: https://github.com/thexaib/colornames
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

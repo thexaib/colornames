@@ -7,7 +7,7 @@ import 'package:colornames/colornames.dart';
 
 void main() {
   test('test specific color name', () {
-    final truth = "Lemon";
+    final truth = "Lemon Fresh";
     final color= Color(0xFFFDE910);
     final fixture = ColorNames.guess(color);
     expect(fixture, truth);
@@ -15,7 +15,7 @@ void main() {
     expect(color2.colorName, "Piper");
   });
   test('test colors with alpha', () {
-    final truth = "Lemon";
+    final truth = "Lemon Fresh";
     final color= Color(0x67FDE910);
     final fixture = ColorNames.guess(color);
     expect(fixture, truth);
@@ -42,4 +42,5 @@ void main() {
     expect(128.colorName, "Navy Blue");
     expect(0x007fff.colorName, "Azure");
   });
+
 }

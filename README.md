@@ -2,7 +2,8 @@
 
 Get a name for given Color
 
-See working [Online Demo](https://apps.thexaib.com/colornames)
+See working [Online Demo](https://thexaib.github.io/apps/colornames-app/)
+![DartArabic Showcase](https://raw.githubusercontent.com/thexaib/colornames/master/images/colornames_demo.png)
 ## Getting Started
 Follow instruction for [Installation](https://pub.dev/packages/colornames/install).
 

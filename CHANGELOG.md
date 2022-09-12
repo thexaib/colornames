@@ -1,3 +1,5 @@
+## 0.1.0
+- readme updated
 ## 0.0.1+3
 - Fix color values
 ## 0.0.1+2

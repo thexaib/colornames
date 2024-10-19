@@ -1,0 +1,9 @@
+flutter create --org com.thexaib.libs --template=package --project-name colornames .
+dart pub publish --dry-run
+dart format lib
+- testing score using pana
+pana make changes to the project so make a copy
+pub global activate pana
+cp <project> <temp-copy>
+pub global run pana <temp-copy>
+
